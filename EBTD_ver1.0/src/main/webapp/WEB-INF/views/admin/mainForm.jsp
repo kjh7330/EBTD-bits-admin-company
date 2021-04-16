@@ -27,7 +27,7 @@
 </style>
 </head>
 <body>
-<div id="adminheader"><%@ include file="/WEB-INF/views/company/include/adminheader.jsp" %></div>
+<div id="adminheader"><%@ include file="/WEB-INF/views/include/adminheader.jsp" %></div>
 
     <main class="mainview">
         <table class="maintable">
@@ -146,6 +146,6 @@
         </script>
     </main>
 
-<div id="adminfooter"><%@ include file="/WEB-INF/views/company/include/adminfooter.jsp" %></div>
+<div id="adminfooter"><%@ include file="/WEB-INF/views/include/adminfooter.jsp" %></div>
 </body>
 </html>

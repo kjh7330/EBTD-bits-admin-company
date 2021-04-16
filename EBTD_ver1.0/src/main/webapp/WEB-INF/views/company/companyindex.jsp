@@ -12,12 +12,12 @@
 </script>
 </head>
 <body>
-<div id="adminheader"><jsp:include page="include/companyheader.jsp" />
+<div id="adminheader"><%@ include file="/WEB-INF/views/include/companyheader.jsp" %>
 
 </div>
 
 
-<div id="adminfooter"><jsp:include page="include/companyfooter.jsp" />
+<div id="adminfooter"><%@ include file="/WEB-INF/views/include/companyfooter.jsp" %>
 
 </div>
 </body>

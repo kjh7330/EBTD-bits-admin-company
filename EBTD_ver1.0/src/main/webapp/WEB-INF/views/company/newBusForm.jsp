@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div id="adminheader"><jsp:include page="include/companyheader.jsp" />
+<div id="adminheader"><%@ include file="/WEB-INF/views/include/companyheader.jsp" %>
 </div>
 <form action="addNewBus" name = "addnewbusform">
 노선 번호 : <input id = "busNum" name = "busNum"/>
@@ -20,7 +20,7 @@
 </form>
 
 
-<div id="adminfooter"><jsp:include page="include/companyfooter.jsp" />
+<div id="adminfooter"><%@ include file="/WEB-INF/views/include/companyfooter.jsp" %>
 
 </div>
 </body>
