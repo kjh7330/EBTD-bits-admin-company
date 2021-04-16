@@ -1,10 +1,22 @@
 package com.ebtd.www.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ebtd.www.bean.UserBean;
+import com.ebtd.www.service.AdminMM;
 
 @Controller
-public class AdminController {
+public class AdminCompanyController {
+	
+	@Autowired
+	private AdminMM am;	//관리자 서비스 클래스
+	
+	ModelAndView mav;
 	
 	@GetMapping(value = "/admin")
 	public String getMain() {
@@ -61,4 +73,5 @@ public class AdminController {
 		return "admin/company/companyRejectDetailForm";
 	}
 	
+		
 }
