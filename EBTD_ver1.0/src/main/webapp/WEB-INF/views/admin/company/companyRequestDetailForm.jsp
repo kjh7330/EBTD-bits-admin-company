@@ -45,7 +45,7 @@
     </style>
 </head>
 <body>
-<div id="adminheader"><%@ include file="/WEB-INF/views/include/adminheader.jsp" %></div>
+<div id="adminheader"><%@ include file="/WEB-INF/views/company/include/adminheader.jsp" %></div>
 
     <div class="company-container">
         <div class="cdate">신청일 : </div>
@@ -64,6 +64,6 @@
         </table>
     </div>
 
-<div id="adminfooter"><%@ include file="/WEB-INF/views/include/adminfooter.jsp" %></div>
+<div id="adminfooter"><%@ include file="/WEB-INF/views/company/include/adminfooter.jsp" %></div>
 </body>
 </html>

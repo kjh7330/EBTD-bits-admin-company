@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-<div id="adminheader"><%@ include file="/WEB-INF/views/include/adminheader.jsp" %></div>
+<div id="adminheader"><%@ include file="/WEB-INF/views/company/include/adminheader.jsp" %></div>
 
     <div class="company-container">
         <input class="ctile" value="회사 등록 신청 List" readonly>
@@ -43,6 +43,6 @@
         </div>
     </div>
 
-<div id="adminfooter"><%@ include file="/WEB-INF/views/include/adminfooter.jsp" %></div>
+<div id="adminfooter"><%@ include file="/WEB-INF/views/company/include/adminfooter.jsp" %></div>
 </body>
 </html>
