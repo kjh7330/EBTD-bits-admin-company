@@ -154,11 +154,15 @@
                 display: block;
                 font-size: 15px;
             }
+            .adetail{
+                text-decoration: none;
+            }
             .dropdown-content a:hover {
                 background-color: #f1f1f1;
             }
             .dropdown:hover .dropdown-content {
                 display: block;
+                color: black;
             }
             .dropdown:hover .dropbtn {
                 background-color: #0C3D6A;
@@ -187,8 +191,8 @@
             font-size: 16px;
             color: white;
             position: absolute;
-            right: 24px;
-            top: 25px;
+            right: 23px;
+            top: 23px;
             width: 20px;
             background-color: transparent;
             /* 알림 숫자 */border: none;
@@ -204,7 +208,7 @@
     <header>
         <div class="hcontainer">
             <div class="headericon"><i id="headericon" class="far fa-user"></i>관리자님</div>
-                <div class="headertitle"><img src="./resources/image/mainlogo.png" alt="EBTD메인로고" style="height: 80px;"/>&nbsp;</div>
+                <div class="headertitle"><a style="text-decoration: none;" href="/ebtd/admin"><img src="/resources/image/mainlogo.png" alt="EBTD메인로고" style="height: 80px;"/></a>&nbsp;</div>
                 <div class="headeralarm">
                     <div class="headerbell">
                         <i class="fas fa-bell"></i><i class="fas fa-comment" style="font-size: 35px; color: red; position: absolute; top: 20px;"></i>
@@ -217,23 +221,27 @@
         </div>
         <nav class="navdiv">
             <div class="dropdown">
-                <button class="dropbtn">노선 관리</button>
+                <button class="dropbtn">회사 관리</button>
                 <div class="dropdown-content">
-                    <div class="menudetail"><a href="newBusForm">새로운 노선 등록 신청</a></div>
-                    <div class="menudetail"><a href="#">기존 노선 변경 신청</a></div>
-                    <div class="menudetail"><a href="#">노선 변경 및 등록 신청 내역 확인</a></div>
-                    <div class="menudetail"><a class="adetail" href="#">&nbsp;&nbsp;- 신규 신청 내역</a></div>
-                    <div class="menudetail"><a class="adetail" href="#">&nbsp;&nbsp;- 변경 신청 내역</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="/www/admin/company/companyRequestListForm">회사 등록 승인</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">노선 변경 승인</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="/www/admin/company/newBusRouteListForm">&nbsp;&nbsp;- 신규 노선 등록</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="/www/admin/company/updateBusRouteListForm">&nbsp;&nbsp;- 기존 노선 수정</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="/www/admin/company/companyNameListForm">버스 회사 등록 현황</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">승인/반려 내역 보기</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="/www/admin/company/companyApprovalListForm">&nbsp;&nbsp;- 승인 내역</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="/www/admin/company/companyRejectListForm">&nbsp;&nbsp;- 반려 내역</a></div>
                 </div>
             </div>
             <div class="navline">
             <i class="fas fa-grip-lines-vertical"></i>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">기사 관리</button>
+                <button class="dropbtn">이용자 관리</button>
                 <div class="dropdown-content">
-                    <div class="menudetail"><a href="#">노선 별 기사 목록 및 수정</a></div>
-                    <div class="menudetail"><a href="#">기사 추가</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">이용자 상세</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">이용자 전체 히스토리</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">이용자 히스토리 챠트</a></div>
                 </div>
             </div>
             <div class="navline">
@@ -242,9 +250,11 @@
             <div class="dropdown">
                 <button class="dropbtn">정류장 관리</button>
                 <div class="dropdown-content">
-                    <div class="menudetail"><a href="#">정류장 목록</a></div>
-                    <div class="menudetail"><a href="#">정류장 등록 신청</a></div>
-                    <div class="menudetail"><a href="#">정류장 등록 신청 내역 확인</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">정류장 전체 리스트</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">정류장 등록 및 신청 리스트</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">정류장 결재 내역함</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">정류장별 이용자 히스토리</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">정류장 이용자 챠트</a></div>
                 </div>
             </div>
             <div class="navline">
@@ -253,10 +263,8 @@
             <div class="dropdown">
                 <button class="dropbtn">고객 센터</button>
                 <div class="dropdown-content">
-                    <div class="menudetail"><a href="#">현재 탑승 인원</a></div>
-                    <div class="menudetail"><a href="#">당사 이용자 히스토리</a></div>
-                    <div class="menudetail"><a href="#">전체 이용자 추이</a></div>
-                    <div class="menudetail"><a href="#">이용자 문의</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">고객센터</a></div>
+                    <div class="menudetail"><a style="text-decoration: none;" href="#">로그아웃</a></div>
                 </div>
             </div>
         </nav>
