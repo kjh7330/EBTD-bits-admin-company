@@ -39,6 +39,10 @@
 	<!-- @Transactional 어노테이션 사용을 위해 
 			반드시 servlet-context.xml에 설정함 -->
 	<tx:annotation-driven transaction-manager="tx_manager"/>
-	
+	<beans:bean id = "uploadPath" class="java.lang.String">
+		<beans:constructor-arg value="C:\WorkSpace_Spring\login\src\main\webapp\resources\profileImage">
+
+		</beans:constructor-arg>
+	</beans:bean>
 	
 </beans:beans>
